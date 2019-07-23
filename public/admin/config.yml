@@ -55,3 +55,22 @@ collections:
               - widget: string
                 name: type
                 label: 'Mime Type'
+  - label: "Blog"
+      name: "blog"
+      folder: "_posts/blog"
+      create: true
+      fields:
+        - {label: "Title", name: "title", widget: "string"}
+        - {label: "Publish Date", name: "date", widget: "datetime"}
+        - {label: "Featured Image", name: "thumbnail", widget: "image"}
+        - {label: "Body", name: "body", widget: "markdown"}
+  - label: "Question"
+      name: "questions"
+      folder: "_questions"
+      create: true
+      fields:
+        - {label: "Questions", name: "questions", widget: "string"}
+        - {label: "Difficulty", name: "difficulty", widget: "number"}
+        - {label: "Audio Link", name: "audioLink", widget: "string"}
+        - {label: "Answer", name: "answer", widget: "string"}
+        - {label: "Type", name: "type", widget: "string"}

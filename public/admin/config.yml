@@ -62,7 +62,7 @@ collections:
     create: true
     extension: json
     fields:
-      - {label: "Question", name: "Question", widget: "string"}
+      - {label: "Question", name: "question", widget: "string"}
       - {label: "Difficulty", name: "Difficulty", widget: "number"}
       - {label: "Audio Link", name: "udioLink", widget: "string"}
       - {label: "Answer", name: "answer", widget: "string"}

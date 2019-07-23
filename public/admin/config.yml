@@ -71,3 +71,21 @@ collections:
               - {label: "Total Places", name: "totalPlaces", widget: "number"}
               - {label: "Filled Places", name: "filledPlaces", widget: "number"}
 
+  - name: question
+      label: Question
+      description: "List of questions"
+      create: true
+      files:
+        - label: "Question"
+          name: "about"
+          file: "public/questions.json"
+          fields:
+            - label: "Question List"
+              name: "questionList"
+              widget: "list"
+              fields:
+                - {label: "Question", name: "question", widget: "string"}
+                - {label: "Difficulty", name: "Difficulty", widget: "number"}
+                - {label: "Audio Link", name: "audioLink", widget: "string"}
+                - {label: "Answer", name: "answer", widget: "string"}
+                - {label: "Type", name: "type", widget: "string"}

@@ -55,21 +55,19 @@ collections:
               - widget: string
                 name: type
                 label: 'Mime Type'
-  - name: question
-    label: Question
-    description: "List of questions"
-    create: true
+  - name: "tourInfo"
+    label: "Tour Info"
+    description: "Upcoming tours and their availability"
     files:
-      - label: "Question"
-        name: "about"
+      - label: "tour"
+        name: "Tour"
         file: "public/questions.json"
         fields:
-          - label: "Question List"
-            name: "questionList"
+          - label: "Tour List"
+            name: "tourList"
             widget: "list"
             fields:
-              - {label: "Question", name: "question", widget: "string"}
-              - {label: "Difficulty", name: "Difficulty", widget: "number"}
-              - {label: "Audio Link", name: "udioLink", widget: "string"}
-              - {label: "Answer", name: "answer", widget: "string"}
-              - {label: "Type", name: "type", widget: "string"}
+              - {label: "Tour Date", name: "date", widget: "datetime"}
+              - {label: "Total Places", name: "totalPlaces", widget: "number"}
+              - {label: "Filled Places", name: "filledPlaces", widget: "number"}
+

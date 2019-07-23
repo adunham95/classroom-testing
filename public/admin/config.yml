@@ -55,8 +55,8 @@ collections:
               - widget: string
                 name: type
                 label: 'Mime Type'
-  - label: "Question"
-      name: "questions"
+  - label: Question
+      name: questions
       folder: "_questions"
       create: true
       fields:

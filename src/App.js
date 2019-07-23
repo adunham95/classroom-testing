@@ -1,7 +1,7 @@
 import React from 'react';
 import {BrowserRouter as Router, Route, Link, withRouter, Switch} from "react-router-dom";
 import './App.scss';
-import {Home, About, Users, TeacherLogin, Test} from "./pages/index";
+import {Home, About, Users, TeacherLogin, Test, NoMatch} from "./pages/index";
 import {TeacherRoute} from "./components/PrivateRoutes"
 import {fakeAuth} from "./functions/auth";
 import Header from "./components/header";
@@ -18,6 +18,7 @@ function App() {
             <Route path="/test" exact component={Test} />
             <Route path="/teacherlogin" component={TeacherLogin} />
             <TeacherRoute path="/users/" component={Users} />
+            <Route component={NoMatch} />
           </Switch>
         </div>
       </Router>

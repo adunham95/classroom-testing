@@ -55,12 +55,13 @@ collections:
               - widget: string
                 name: type
                 label: 'Mime Type'
-  - label: Question
-    name: questions
-    folder: "_questions"
+  - label: question
+    name: Questions
+    folder: "_questions/"
+    identifier_field: question,
     create: true
     fields:
-      - {label: "Questions", name: "questions", widget: "string"}
+      - {label: "Question", name: "question", widget: "string"}
       - {label: "Difficulty", name: "difficulty", widget: "number"}
       - {label: "Audio Link", name: "audioLink", widget: "string"}
       - {label: "Answer", name: "answer", widget: "string"}

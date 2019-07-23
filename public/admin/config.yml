@@ -58,7 +58,7 @@ collections:
   - label: question
     name: Questions
     folder: "_questions/"
-    identifier_field: question,
+    identifier_field: question
     create: true
     fields:
       - {label: "Question", name: "question", widget: "string"}

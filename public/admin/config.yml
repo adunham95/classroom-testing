@@ -60,6 +60,7 @@ collections:
     folder: "_questions/"
     identifier_field: question
     create: true
+    extension: json
     fields:
       - {label: "Question", name: "Question", widget: "string"}
       - {label: "Difficulty", name: "Difficulty", widget: "number"}

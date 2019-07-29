@@ -1,5 +1,5 @@
 import React from "react";
-import {tests} from "../../data";
+import {questionList as tests} from "../../questions";
 import {groupBy} from "../../functions/functions";
 import {TestItem} from "../../components/testItem";
 
@@ -17,6 +17,7 @@ export default class Test extends React.Component {
 
     componentDidMount() {
         let data =  groupBy(tests, "difficulty");
+        console.log(data);
         data = data[this.props.match.params.skillLevel].map((item, i) => {
            i === 0 ? item.visible = false : item.visible = true;
            return item

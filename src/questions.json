@@ -6,6 +6,13 @@
       "audioLink": "google.com",
       "answer": "This is my answer",
       "type": "Word"
+    },
+    {
+      "question": "MY Section Question",
+      "difficulty": 2,
+      "audioLink": "something.mp4",
+      "answer": "Something",
+      "type": "Sentence"
     }
   ]
 }
